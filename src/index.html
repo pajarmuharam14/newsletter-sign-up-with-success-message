@@ -3,29 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
     <link rel="stylesheet" href="../public/style.css" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   </head>
-  <body>
+  <body class="font-Roboto bg-[hsl(235,18%,26%)]">
     <!-- Sign-up form start -->
-
-    Stay updated! Join 60,000+ product managers receiving monthly updates on: Product discovery and building what matters Measuring to ensure updates are a success And much more! Email address email@company.com Subscribe to monthly
-    newsletter
-
+    <main class="flex justify-center items-center h-screen">
+      <div class="main-container bg-[hsl(0,0%,100%)] flex flex-col-reverse md:flex md:flex-row rounded-lg w-[800px]">
+        <div class="product-describ my-4 ml-8 md:my-8 md:ml-16">
+          <div class="title">
+            <h1 class="text-4xl pt-8 font-bold text-[hsl(234,29%,20%)]">Stay updated!</h1>
+          </div>
+          <div class="list-container text-[hsl(235,18%,26%)]">
+            <p class="my-4">Join 60,000+ product managers receiving monthly updates on:</p>
+            <div class="list flex items-center my-2">
+              <img src="../assets/images/icon-list.svg" alt="" />
+              <p class="ml-3">Product discovery and building what matters</p>
+            </div>
+            <div class="list flex items-center my-2">
+              <img src="../assets/images/icon-list.svg" alt="" />
+              <p class="ml-3">Measuring to ensure updates are a success</p>
+            </div>
+            <div class="list flex items-center my-2">
+              <img src="../assets/images/icon-list.svg" alt="" />
+              <p class="ml-3">And much more!</p>
+            </div>
+          </div>
+          <form action="#" class="mt-6">
+            <label for="email"
+              ><span class="text-[hsl(234,29%,20%)] font-bold">Email address</span><br />
+              <input type="email" id="email" placeholder="email@company.com" class="border border-[hsl(231,7%,60%)] py-2 px-4 mt-2 w-[300px] rounded-md" />
+            </label>
+            <input type="submit" value="Subscribe to monthly newsletter" class="cursor-pointer border text-[hsl(0,0%,100%)] font-bold bg-[hsl(234,29%,20%)] w-[300px] rounded-md py-3 mt-4 hover:bg-[hsl(4,100%,67%)]" />
+          </form>
+        </div>
+        <div class="illustration md:py-4 md:pr-4">
+          <img src="../assets/images/illustration-sign-up-desktop.svg" alt="" />
+        </div>
+      </div>
+    </main>
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-
-    Thanks for subscribing! A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription. Dismiss message
-
+    <div class="success-message hidden justify-center items-center h-screen">
+      <div class="container w-[400px] bg-[hsl(0,0%,100%)] px-14 py-8 rounded-2xl">
+        <img src="../assets/images/icon-success.svg" alt="" class="w-[45px]" />
+        <h1 class="text-[hsl(234,29%,20%) font-bold text-4xl my-4">Thanks for subscribing!</h1>
+        <p class="text-[hsl(235,18%,26%)] text-[16px]">
+          A confirmation email has been sent to <span class="text-[hsl(234,29%,20%)] font-bold">ash@loremcompany.com.</span> Please open it and click the button inside to confirm your subscription.
+        </p>
+        <button class="border bg-[hsl(234,29%,20%)] text-[hsl(0,0%,100%)] font-bold my-6 w-[300px] rounded-md p-2 block mx-auto hover:bg-[hsl(4,100%,67%)] cursor-pointer">Dismiss message</button>
+      </div>
+    </div>
     <!-- Success message end -->
 
-    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+    <!-- <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div> -->
   </body>
 </html>
