@@ -11,7 +11,7 @@
   </head>
   <body class="font-Roboto bg-[hsl(235,18%,26%)]">
     <!-- Sign-up form start -->
-    <main class="flex justify-center items-center h-screen">
+    <main class="main-form flex justify-center items-center h-screen">
       <div class="main-container bg-[hsl(0,0%,100%)] flex flex-col-reverse md:flex md:flex-row rounded-lg w-[800px]">
         <div class="product-describ my-4 ml-8 md:my-8 md:ml-16">
           <div class="title">
@@ -32,10 +32,11 @@
               <p class="ml-3">And much more!</p>
             </div>
           </div>
-          <form action="#" class="mt-6">
+          <form action="#" id="form-email" class="mt-6">
             <label for="email"
-              ><span class="text-[hsl(234,29%,20%)] font-bold">Email address</span><br />
-              <input type="email" id="email" placeholder="email@company.com" class="border border-[hsl(231,7%,60%)] py-2 px-4 mt-2 w-[300px] rounded-md" />
+              ><span class="text-[12px] text-[hsl(234,29%,20%)] font-bold">Email address</span><span class="invalid-message hidden ml-[110px] text-[hsl(4,100%,67%)] text-[12px] font-bold">Valid email required</span>
+              <br />
+              <input type="text" id="email" placeholder="email@company.com" class="border border-[hsl(231,7%,60%)] py-2 px-4 mt-1 w-[300px] rounded-md" />
             </label>
             <input type="submit" value="Subscribe to monthly newsletter" class="cursor-pointer border text-[hsl(0,0%,100%)] font-bold bg-[hsl(234,29%,20%)] w-[300px] rounded-md py-3 mt-4 hover:bg-[hsl(4,100%,67%)]" />
           </form>
@@ -59,7 +60,6 @@
       </div>
     </div>
     <!-- Success message end -->
-
-    <!-- <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div> -->
+    <script src="index.js"></script>
   </body>
 </html>
