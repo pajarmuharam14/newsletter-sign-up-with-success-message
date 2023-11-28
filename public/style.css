@@ -568,14 +568,6 @@ video {
   }
 }
 
-.visible {
-  visibility: visible;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -622,10 +614,6 @@ video {
 
 .block {
   display: block;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -756,6 +744,11 @@ video {
 
 .text-\[16px\] {
   font-size: 16px;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
 }
 
 .font-bold {
